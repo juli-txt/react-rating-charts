@@ -1,18 +1,26 @@
 {
   "name": "react-rating-charts",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
   "type": "module",
   "scripts": {
     "clean": "tsc --build --clean",
     "test": "jest --coverage",
-    "build": "tsc"
+    "build": "tsc --build && tsc --build tsconfig.esm.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juli-txt/react-rating-charts.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/cjs/index.d.ts"
+    }
   },
   "author": "Julian Manz",
   "license": "ISC",
