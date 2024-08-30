@@ -1,6 +1,6 @@
 {
   "name": "react-rating-charts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -10,11 +10,6 @@
     "clean": "tsc --build --clean",
     "test": "jest --coverage",
     "build": "tsc --build && tsc --build tsconfig.esm.json"
-  },
-  "jest": {
-    "transformIgnorePatterns": [
-      "/node_modules/(?!d3|d3-array|internmap|delaunator|robust-predicates)"
-    ]
   },
   "repository": {
     "type": "git",
