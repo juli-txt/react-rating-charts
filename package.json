@@ -1,10 +1,11 @@
 {
   "name": "react-rating-charts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
+    "clean": "tsc --build --clean",
     "test": "jest --coverage",
     "build": "tsc"
   },
