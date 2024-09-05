@@ -49,7 +49,7 @@ const Histogram = ({
   size,
   titles,
   tooltips,
-}: HistogramProps) => {
+}: HistogramProps): JSX.Element => {
   useEffect(() => {
     histogram(data, minRatingValue, ratingValue, {
       selector: "#histogram",

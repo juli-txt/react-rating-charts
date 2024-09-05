@@ -33,7 +33,7 @@
     "@testing-library/react": "^16.0.1",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
-    "rating-charts.js": "^1.1.5",
+    "rating-charts.js": "^1.1.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "ts-node": "^10.9.2"
