@@ -1,5 +1,5 @@
 import { SpiderGraph as spiderGraph } from "rating-charts.js";
-import { memo, useEffect } from "react";
+import { ReactElement, useEffect } from "react";
 import { Margins, Size, Titles } from "../../Types";
 
 /**
@@ -44,7 +44,7 @@ const SpiderGraph = ({
   setTooltip,
   size,
   title,
-}: SpiderGraphProps) => {
+}: SpiderGraphProps): ReactElement<SpiderGraphProps> => {
   useEffect(() => {
     spiderGraph(data, minRatingValue, {
       size: { width: size?.width, height: size?.height },
@@ -87,4 +87,4 @@ const SpiderGraph = ({
  * />
  * ```
  */
-export default memo(SpiderGraph);
+export default SpiderGraph;

@@ -1,5 +1,5 @@
 import { Histogram as histogram } from "rating-charts.js";
-import { memo, useEffect } from "react";
+import { ReactElement, useEffect } from "react";
 import { Margins, Size, Titles, Tooltips } from "../../Types";
 
 /**
@@ -49,7 +49,7 @@ const Histogram = ({
   size,
   titles,
   tooltips,
-}: HistogramProps): JSX.Element => {
+}: HistogramProps): ReactElement<HistogramProps> => {
   useEffect(() => {
     histogram(data, minRatingValue, ratingValue, {
       selector: "#histogram",
@@ -114,4 +114,4 @@ const Histogram = ({
  * />
  * ```
  */
-export default memo(Histogram);
+export default Histogram;

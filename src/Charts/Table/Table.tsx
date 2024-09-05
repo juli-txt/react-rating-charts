@@ -1,5 +1,5 @@
 import { Table as table } from "rating-charts.js";
-import { memo, useEffect } from "react";
+import { ReactElement, useEffect } from "react";
 import { Margins, Size } from "../../Types";
 
 /**
@@ -61,7 +61,7 @@ const Table = ({
   minSize,
   maxSize,
   title,
-}: TableProps) => {
+}: TableProps): ReactElement<TableProps> => {
   useEffect(() => {
     table(data, columns, {
       selector: "#table",
@@ -120,4 +120,4 @@ const Table = ({
  * />
  * ```
  */
-export default memo(Table);
+export default Table;

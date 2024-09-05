@@ -1,5 +1,5 @@
 import { LineGraph as lineGraph } from "rating-charts.js";
-import { memo, useEffect } from "react";
+import { memo, ReactElement, useEffect } from "react";
 import { Margins, Size, Titles, Tooltips } from "../../Types";
 
 /**
@@ -67,7 +67,7 @@ const LineGraph = ({
   size,
   titles,
   tooltips,
-}: LineGraphProps) => {
+}: LineGraphProps): ReactElement<LineGraphProps> => {
   useEffect(() => {
     lineGraph(data, minRatingValue, {
       selector: "#line-chart",
@@ -132,4 +132,4 @@ const LineGraph = ({
  * }}
  * />
  */
-export default memo(LineGraph);
+export default LineGraph;

@@ -1,5 +1,5 @@
 import { Rating as rating } from "rating-charts.js";
-import { memo, useEffect } from "react";
+import { useEffect, ReactElement } from "react";
 import { Size, Titles } from "../../Types";
 
 /**
@@ -52,7 +52,7 @@ const Rating = ({
   title,
   tooltips,
   width,
-}: RatingProps) => {
+}: RatingProps): ReactElement<RatingProps> => {
   useEffect(() => {
     rating(
       {
@@ -114,4 +114,5 @@ const Rating = ({
  * width={500}
  * />
  */
-export default memo(Rating);
+
+export default Rating;

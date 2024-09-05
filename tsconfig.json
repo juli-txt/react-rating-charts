@@ -14,7 +14,9 @@
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "outDir": "dist/cjs",
-    "typeRoots": ["./node_modules/@types"]
+    "typeRoots": ["./node_modules/@types"],
+    "strictNullChecks": true,
+    "noImplicitAny": true
   },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist", "**/__tests__"]

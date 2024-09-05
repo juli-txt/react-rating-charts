@@ -1,1 +1,1 @@
-export { default as Margins } from "./Margins";
+export type { default as Margins } from "./Margins";
