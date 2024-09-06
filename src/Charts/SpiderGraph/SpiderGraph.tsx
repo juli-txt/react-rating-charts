@@ -10,8 +10,7 @@ import { Margins, Size, Titles } from "../../Types";
  * @interface
  */
 export type SpiderGraphDataProps = {
-  key: string;
-  value: number;
+  [key: string]: number;
 };
 
 /**
@@ -27,7 +26,7 @@ export type SpiderGraphDataProps = {
  * @interface
  */
 export type SpiderGraphProps = {
-  data: SpiderGraphDataProps[];
+  data: SpiderGraphDataProps;
   minRatingValue: number;
   color?: string;
   margins?: Margins;

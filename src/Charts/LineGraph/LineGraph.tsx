@@ -1,5 +1,5 @@
 import { LineGraph as lineGraph } from "rating-charts.js";
-import { memo, ReactElement, useEffect } from "react";
+import { ReactElement, useEffect } from "react";
 import { Margins, Size, Titles, Tooltips } from "../../Types";
 
 /**
