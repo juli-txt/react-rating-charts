@@ -3,3 +3,4 @@ node_modules
 coverage
 yarn-error.log
 *.map
+src/__tests__

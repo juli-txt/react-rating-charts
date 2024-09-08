@@ -2,7 +2,7 @@ import { SpiderGraph, SpiderGraphDataProps, SpiderGraphProps } from "../Charts";
 import { render } from "@testing-library/react";
 
 describe("SpiderGraph", () => {
-  const mockData: SpiderGraphDataProps[] = [{ key: "test", value: 0 }];
+  const mockData: SpiderGraphDataProps = { test: 0 };
   const mockMinRatingValue = 0;
 
   it("renders without input", () => {

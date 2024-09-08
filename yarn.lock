@@ -3348,10 +3348,10 @@ querystringify@^2.1.1:
   resolved "https://registry.npmjs.org/querystringify/-/querystringify-2.2.0.tgz"
   integrity sha512-FIqgj2EUvTa7R50u0rGsyTftzjYmv/a3hO345bZNrqabNqjtgiDMgmo4mkUjd+nzU5oF3dClKqFIPUKybUyqoQ==
 
-rating-charts.js@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/rating-charts.js/-/rating-charts.js-1.2.0.tgz#8810981d7f73d02ed4d83402cf0ac35f3596b8f2"
-  integrity sha512-TVTIVjrP3DSR+b3AJRv4x7kM0KixvNrT2LccRUIFhIihTIlbWhdHgmuG6fDGHWUe0J7iSd/So3WEMeiq6DZp5Q==
+rating-charts.js@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/rating-charts.js/-/rating-charts.js-1.3.0.tgz#0440f8587edbe9905c108eec8c788725f7dce209"
+  integrity sha512-b+zOI4VWW6eQoycZ9SBg5SvwbHkcHweu9mnE+tRnk+gs0HFBZSyd9/Vox51UnzBQZQFYhYGxfV2Jxr4gDLZhpQ==
   dependencies:
     d3 "^7.9.0"
 
